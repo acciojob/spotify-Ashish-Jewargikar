@@ -12,7 +12,7 @@ public class SpotifyService {
     SpotifyRepository spotifyRepository = new SpotifyRepository();
 
     public User createUser(String name, String mobile){
-        return spotifyRepository.createUser(name,mobile);
+        return spotifyRepository.createUser(name, mobile);
     }
 
     public Artist createArtist(String name) {
@@ -32,15 +32,15 @@ public class SpotifyService {
     }
 
     public Playlist createPlaylistOnName(String mobile, String title, List<String> songTitles) throws Exception {
-        return spotifyRepository.createPlaylistOnName(mobile,title,songTitles);
+        return spotifyRepository.createPlaylistOnName(mobile, title, songTitles);
     }
 
     public Playlist findPlaylist(String mobile, String playlistTitle) throws Exception {
-        return spotifyRepository.findPlaylist(mobile,playlistTitle);
+        return spotifyRepository.findPlaylist(mobile, playlistTitle);
     }
 
     public Song likeSong(String mobile, String songTitle) throws Exception {
-        return spotifyRepository.likeSong(mobile,songTitle);
+        return spotifyRepository.likeSong(mobile, songTitle);
     }
 
     public String mostPopularArtist() {
